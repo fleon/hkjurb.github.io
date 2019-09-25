@@ -39,6 +39,7 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132391848-2"></script>
 <script>
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -165,7 +166,7 @@
                         <div class="grid js-grid row row-80">
                             <div class="grid__sizer js-grid__sizer col-sm-6"></div>
                             <div class="grid__item js-grid__item col-sm-6">
-                                <iframe width="720" height="508" src="https://www.youtube.com/embed/d5nsd7VdFf4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe class="" width="720" height="508" src="https://www.youtube.com/embed/d5nsd7VdFf4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
                             <div class="grid__item js-grid__item col-sm-6">
                                 <iframe width="720" height="508" src="https://www.youtube.com/embed/TLNYXwqZHiw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -220,6 +221,12 @@
             <!-- PAGE FOOTER -->
             <!-- - PAGE FOOTER -->
         </div>
+        <script>
+          $('iframe').each(function () {
+            this.style.width = '100%';
+            this.style.height = this.offsetWidth * 3 / 4 + 'px';
+          })
+        </script>
         <!-- <script src="static/js/separate-js/modernizr.custom.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArW7jnLU4wdvZGxBMN1jNXAq5dBxVBt4U"></script> -->
         <!-- VENDOR SCRIPTS -->
